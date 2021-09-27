@@ -1,9 +1,9 @@
 {
   "name": "PlayIdleHelper",
-  "version": "0.1",
+  "version": "0.2",
   "manifest_version": 2,
   "description": "Helper script for PlayIdle.com",
-  "permissions": ["tabs", "*://*.playidle.com/*"],
+  "permissions": ["*://*.playidle.com/*"],
   "content_scripts": [
     {
       "matches": ["*://*.playidle.com/*"],
