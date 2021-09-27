@@ -20,7 +20,7 @@ function Initialize() {
 
   const aTag = newElem.getElementsByClassName('nav-link js-scroll-trigger navBadge')[0];
   aTag.innerHTML = '<i class="fa fa-heart pulse clanColor"></i> PlayIdleHelper ' + version;
-  aTag.href = 'https://www.google.com/';
+  aTag.href = 'https://github.com/Kitavia/PlayIdleHelper';
   aTag.target = '_blank';
 
   navBar.insertBefore(newElem, navItems[navItems.length - 2]);
