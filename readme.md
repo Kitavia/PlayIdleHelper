@@ -1,6 +1,6 @@
 # PlayIdleHelper
 
-PlayIdleHelper is a learning project & extension intended to provide quality of life improvements to [PlayIdle.com](https://www.playidle.com/)
+PlayIdleHelper is a learning project & extension intended to provide quality of life improvements to [PlayIdle.com](https://www.playidle.com/)  
 It is currently not published as an actual extension for multiple reasons, but maybe in the future.
 
 ## Current Features
@@ -13,7 +13,7 @@ It is currently not published as an actual extension for multiple reasons, but m
 
 ## Installation
 
-This installs as an unpacked browser extension, the below example is for chrome
+This installs as an unpacked browser extension, the below example is for chrome  
 Might not work on non-chromium based browsers, haven't tested and probably won't
 
 1. Download this repo
