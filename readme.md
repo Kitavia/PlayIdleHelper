@@ -7,6 +7,7 @@ It is currently not published as an actual extension for multiple reasons, but m
 
 - Calculates total property income
 - Calculates ROI for properties
+- Calculates food effiency
 - Filter jobs (currently hides all jobs except surgeon)
 - Automatically spend energy (down to 10)
 - Checks for updates automatically (but doesn't apply them yet)
