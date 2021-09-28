@@ -48,6 +48,10 @@
     if (urlFileName.startsWith('properties.php')) {
       CalculateRoi();
     }
+
+    if (urlFileName.startsWith('shops.php?id=2')) {
+      CalculateFoodEfficiency();
+    }
   }
 
   function CalculateRoi() {
@@ -85,6 +89,20 @@
 
     const panel = propertiesPanel.getElementsByClassName('panel-body text-center')[0];
     panel.insertAdjacentHTML('beforeend', `<br><i class="fa fa-equals moneyColor"></i><text class="mapColor"> $${profit} / 12hrs</text>`);
+  }
+
+  function CalculateFoodEfficiency() {
+    const foodElements = document.getElementsByTagName('tr');
+    for (const element of foodElements) {
+      const heals = parseInt(element.getElementsByClassName('idleColor')[0].innerText);
+      const cost = parseInt(element.getElementsByClassName('moneyColor')[0].innerText.replace('$', ''));
+
+      const costElement = element.getElementsByClassName('moneyColor')[0];
+
+      const efficiency = (cost / heals).toFixed(2);
+
+      costElement.innerHTML = costElement.innerHTML + '<br>$/HP = ' + efficiency;
+    }
   }
 
   async function isOutdated() {
